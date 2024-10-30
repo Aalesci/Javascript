@@ -1,7 +1,8 @@
 // Valori Falsy
 // "", 0, -0,false, undefined, null, NaN
 
-// Tutti i valori hanno un valore booleano anche se il loro tipo non è boolean
+// Tutti i valori hanno un valore booleano anche se il
+// loro tipo non è boolean
 
 const esempio = 2 > 0;
 
