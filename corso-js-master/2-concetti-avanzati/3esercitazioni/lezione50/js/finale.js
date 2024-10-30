@@ -1,6 +1,6 @@
 //Generare password casuali della lunghezza specificata dall'utente
 const letters =
-  "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890";
+  "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfjklzxcvbnm1234567890";
 
 const array = [];
 
