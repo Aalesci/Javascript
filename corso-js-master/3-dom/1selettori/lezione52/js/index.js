@@ -8,3 +8,9 @@
 // DOM = Document Object Module
 
 //document.body.style.backgroundColor = 'black'; 
+
+
+// ESEMPI: 
+document.body.style.backgroundColor = "green";
+document.body.style.color = "yellow";
+document.getElementById("btn");

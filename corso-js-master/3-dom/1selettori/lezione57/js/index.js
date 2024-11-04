@@ -2,3 +2,33 @@
 
 // querySelector("css selector") - Primo elemento corrispondente
 // querySelectorAll("css selector") - Tutte le corrispondenze in una NodeList = array like object
+
+
+// Query SELECTOR  stimo usando i selettori del CSS
+
+
+
+
+
+const eth =document.querySelector('#eth');  // item 
+eth.style.backgroundColor = "tomato";
+
+const item = document.querySelector(".item"); // classe 
+
+item.style.backgroundColor = 'blue';
+
+const lastItem = document.querySelector("li:last-child");
+lastItem.style.backgroundColor = "green";
+console.log(lastItem);
+
+
+// voglio prenderli tutti: 
+const list = document.querySelectorAll(".item");
+console.log(list); // qui ottengo una node list. 
+
+
+// Le node list mi permettono di usare il metodo forEach 
+
+list.forEach(function (item){
+item.style.color = "orange";
+});

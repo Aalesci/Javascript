@@ -9,3 +9,4 @@ console.log(window);
 // alert("ciao ciao");
 
 console.log(document);
+
