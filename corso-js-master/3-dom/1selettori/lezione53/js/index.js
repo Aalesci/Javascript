@@ -1,6 +1,10 @@
 // Oggetto window = browser api
 // document
 
+////////////////////////////////////////////////
+//////// (DOM) = Document Object Model  //////// 
+////////////////////////////////////////////////
+
 //quando javascript non trova un oggetto lo cercherà su window object
 
 console.log(window);

@@ -8,13 +8,10 @@
 
 
 
-
-
 const eth =document.querySelector('#eth');  // item 
 eth.style.backgroundColor = "tomato";
 
 const item = document.querySelector(".item"); // classe 
-
 item.style.backgroundColor = 'blue';
 
 const lastItem = document.querySelector("li:last-child");
@@ -31,4 +28,17 @@ console.log(list); // qui ottengo una node list.
 
 list.forEach(function (item){
 item.style.color = "orange";
-});
+}); // sono tre valori. 
+
+
+// PER USARE I METODI DEGLI ARRAY: 
+// devo trasformare la mia node list in un array: 
+
+
+const newList = Array.from(list);
+
+const filterList = newList.filter(function (item){
+    return item.classList.contains("last");
+    }); // sono tre valori. 
+
+console.log(filterList);    

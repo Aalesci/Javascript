@@ -24,3 +24,9 @@ const btn = document.getElementById("btn");
 console.log(btn);
 const btnStyle = btn.style;
 console.log(btnStyle);
+
+
+
+////////////////////////////////////////////////
+//////// (DOM) = Document Object Model  //////// 
+////////////////////////////////////////////////
