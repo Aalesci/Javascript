@@ -19,7 +19,6 @@ const Value = first.textContent;
 console.log('Nome del bottone:', Value); // Quello che c'è scritto.
 
 
-
 // Secondo BOTTONE
 
 const second = first.nextElementSibling;
