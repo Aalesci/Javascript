@@ -20,7 +20,6 @@ console.log('Nome del bottone:', Value); // Quello che c'è scritto.
 
 
 // Secondo BOTTONE
-
 const second = first.nextElementSibling;
 second.setAttribute("class", classValue);
 

@@ -9,8 +9,6 @@ const root = document.querySelector('#root');
 console.log(root);
 
 
-
-
 // ho iserito l'elemento <div>Testo del div</div> 
 const div = document.createElement("div");
 const divText = document.createTextNode('Testo del div');
