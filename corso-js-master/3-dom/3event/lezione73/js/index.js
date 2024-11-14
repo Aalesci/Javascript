@@ -21,7 +21,6 @@ function handleClick(){
       };
     };
 
-
 const addHeading = function () {
   const title = document.createElement("h3");
   number++;

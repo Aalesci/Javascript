@@ -4,3 +4,21 @@
 // keyup - Il tasto "torna su"
 
 const input = document.getElementById("text");
+
+
+let printEvent = (text) => {
+    console.log(text || "Press");
+};
+
+
+input.addEventListener('keypress', function ()  {
+    printEvent();
+}) ;
+
+
+
+
+
+
+
+
