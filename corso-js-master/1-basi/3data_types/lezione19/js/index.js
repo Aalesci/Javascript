@@ -12,3 +12,5 @@ esempio.set("sposato", true);
 
 console.log(esempio);
 
+ //log
+
