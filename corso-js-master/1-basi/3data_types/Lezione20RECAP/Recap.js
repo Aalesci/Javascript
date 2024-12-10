@@ -73,7 +73,7 @@ function esempioConst() {
 esempioConst();
 
 
-////////// Riepilogo //////////
+////////// Riepilogo ////////// Variabili. 
 // ---> Scope:
 // var: Funzione
 // let e const: Blocco
@@ -92,7 +92,7 @@ esempioConst();
 //////////////////////// OPERATORI LOGICI ////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-// Uguaglianza Debole (==
+// Uguaglianza Debole (==) 
 // Confronta due valori per uguaglianza dopo aver effettuato la conversione di tipo.
 5 == '5'; // true perché '5' viene convertito a numero
 
@@ -158,10 +158,10 @@ console.log(!(5 > 3)); // false
 ////////////////////////////   TIPI DI ERRORI   /////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // Tipo di Errore	Descrizione           	                Esempio
-// SyntaxError	    Errore di sintassi	                    console.log("Hello world;
+// SyntaxError	    Errore di sintassi	                  console.log("Hello world;
 // ReferenceError	Variabile non definita	                console.log(x);
-// TypeError	    Operazione su tipo sbagliato	        let num = 5; num.toUpperCase();
-// RangeError	    Valore fuori dall'intervallo previsto	let num = 1; num.toFixed(100);
-// EvalError	    Errore nell'uso di eval()	            eval("hello");
-// URIError     	Errore nelle funzioni globali URI	    decodeURI("%");
+// TypeError	    Operazione su tipo sbagliato	          let num = 5; num.toUpperCase();
+// RangeError	    Valore fuori dall'intervallo previsto	  let num = 1; num.toFixed(100);
+// EvalError	    Errore nell'uso di eval()	              eval("hello");
+// URIError     	Errore nelle funzioni globali URI	      decodeURI("%");
 // InternalError	Stato incoerente nell'interprete Js	    function loop() { loop(); } loop();

@@ -26,3 +26,16 @@ const people = [
 ];
 
 const prezzi = [18, 28, 45, 78, 54, 43, 12];
+
+
+
+const totale = prezzi.reduce(function(
+  total, 
+  item, 
+  index, 
+  array 
+){
+console.log('totale:', total,'item: ', item,'index: ', index,'Array: ', array ); 
+
+});
+
