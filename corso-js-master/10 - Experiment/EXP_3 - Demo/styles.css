@@ -24,9 +24,11 @@ body {
     cursor: pointer;
     color: white;
   }
-  .option1 { background-color: #2196F3; } /* Verde */
-  .option2 { background-color: #2196F3; } /* Blu */
-  .option3 { background-color: #2196F3; } /* Rosso */
+  .option1 { background-color: #2196F3; } 
+  .option2 { background-color: #2196F3; } 
+  .option3 { background-color: #2196F3; } 
+  .option4 { background-color: #2196F3; } 
+
   .result {
     font-weight: bold;
     margin-top: 20px;

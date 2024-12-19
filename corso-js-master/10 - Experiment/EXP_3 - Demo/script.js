@@ -1,10 +1,12 @@
 
 
   const exercise = [
-    { guid: "0001", tipoEX: "Verbo essere", domanda: "Io * felice oggi", opzioni: ["sono", "è", "siamo"], rispostaCorretta: "sono"}, 
-    { guid: "0002", tipoEX: "Verbo essere", domanda: "Tu * il mio migliore amico", opzioni: ["sono", "è", "sei"], rispostaCorretta: "sei"}, 
-    { guid: "0003", tipoEX: "Verbo essere", domanda: "Noi * pronti per partire", opzioni: ["siete", "siamo", "é"], rispostaCorretta: "siamo"}, 
-    { guid: "0004", tipoEX: "Verbo essere", domanda: "Lei * molto intelligente", opzioni: ["siete", "è", "sei"], rispostaCorretta: "è"}, 
+    { guid: "0001", tipoEX: "Verbo essere", domanda: "Io ***** felice oggi", opzioni: ["sono", "è", "siamo"], rispostaCorretta: "sono"}, 
+    { guid: "0002", tipoEX: "Verbo essere", domanda: "Tu ***** il mio migliore amico", opzioni: ["sono", "è", "sei"], rispostaCorretta: "sei"}, 
+    { guid: "0003", tipoEX: "Verbo essere", domanda: "Noi ***** pronti per partire", opzioni: ["siete", "siamo", "é"], rispostaCorretta: "siamo"}, 
+    { guid: "0004", tipoEX: "Verbo essere", domanda: "Lei ***** molto intelligente", opzioni: ["siete", "è", "sei"], rispostaCorretta: "è"},
+    { guid: "0004", tipoEX: "Verbo essere", domanda: "L'Angelica è *****", opzioni: ["bellissima", "inteligente", "Dolce qunado vuole", "Cattiva"], rispostaCorretta: "Dolce qunado vuole"},
+
 ];
 
   let domandaCorrente = 0;
