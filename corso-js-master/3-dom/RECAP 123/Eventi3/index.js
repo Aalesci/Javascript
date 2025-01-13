@@ -4,7 +4,6 @@ console.log('Lista oggetti selezionati:');
 
 // lista di selettori: 
 
-
 // Usa . per le classi.
 // Usa # per gli ID.
 

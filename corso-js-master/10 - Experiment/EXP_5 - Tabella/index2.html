@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabella dei Dati</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .table-container {
+      width: 80%; /* Personalizza la larghezza a tuo piacimento */
+      height: 400px; /* Altezza personalizzabile */
+      overflow-y: scroll;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="table-container">
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Codice</th>
+          <th>Valore 1</th>
+          <th>Valore 2</th>
+          <th>Valore 3</th>
+          <th>Tipo</th>
+          <th>Numero</th>
+          <th>Quantità</th>
+          <th>Valuta</th>
+          <th>Valore 4</th>
+          <th>Unità</th>
+          <th>Data Inizio</th>
+          <th>Data Fine</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const data = [
+      "ZPRM;3003;10;;SZ;9801380;0,63;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801382;0,71;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9803943;1,33;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801400;0,64;EUR;1;PZ;070125;311225;",        
+      "ZPRM;3003;10;;SZ;9801380;0,63;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801382;0,71;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9803943;1,33;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801400;0,64;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801380;0,63;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801382;0,71;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9803943;1,33;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801400;0,64;EUR;1;PZ;070125;311225;",    
+      "ZPRM;3003;10;;SZ;9801380;0,63;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801382;0,71;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9803943;1,33;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9801400;0,64;EUR;1;PZ;070125;311225;",
+      "ZPRM;3003;10;;SZ;9803946;1,27;EUR;1;PZ;070125;311225;"
+    ];
+
+    function createTable(data) {
+      const tbody = document.querySelector('#data-table tbody');
+      data.forEach(item => {
+        const row = document.createElement('tr');
+        item.split(';').forEach(cell => {
+          const td = document.createElement('td');
+          td.textContent = cell;
+          row.appendChild(td);
+        });
+        tbody.appendChild(row);
+      });
+    }
+
+    createTable(data);
+  </script>
+</body>
+</html>

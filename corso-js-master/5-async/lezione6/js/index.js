@@ -11,16 +11,18 @@
 const boilWater = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("boilWater");
       resolve();
-    }, 5000);
+    }, 3000);
   });
 };
 
 const makeCarote = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("makeCarote");
       resolve();
-    }, 2000);
+    }, 3000);
   });
 };
 
@@ -33,7 +35,28 @@ const stopPromise = () => {
 const makeCipolle = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("makeCipolle");
       resolve();
-    }, 2000);
+    }, 3000);
   });
 };
+
+const makeZuppa = async function () {  
+  try{
+  
+  await boilWater();
+  await makeCarote();
+  await stopPromise(); // Rappresenta il mio caso di errore
+  await makeCipolle();
+
+  console.log('Zuppa preonta')
+  } catch(error){
+    console.log(error);
+  } finally{ 
+    console.log('Finito'); 
+  }
+
+};
+
+
+makeZuppa(); 
